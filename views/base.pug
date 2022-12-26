@@ -1,0 +1,26 @@
+doctype html
+html
+    head
+            title Harsh Dance Academy 
+    block scripts
+        script(src='/static/index.js')
+    block style
+        style 
+           include ../static/style.css
+      
+    body
+        nav#navbar
+         ul
+                div#logo 
+                    img(src="/static/img/logo.png")
+                    | HDA 
+                li #[a(href="/") Home] 
+                li #[a(href="/") About]
+                li #[a(href="/contact") Contact us]
+                li #[a(href="/") Service ]
+                li #[a(href="/") Information ]
+    block content
+    footer#footer 
+    
+        |   Copyright (c) 2022 Harshcoding.com | All rigts reserved
+    

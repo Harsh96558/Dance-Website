@@ -1,0 +1,47 @@
+extends base.pug
+
+block scripts
+  script(src='/static/index.js')
+
+block style 
+    style 
+        include ../static/style.css
+
+block content 
+   
+    section#introSection 
+        div   WELCOME TO BEST DANCE ACADEMY 
+        div.small   EAT SLEEP DANCE REPEAT 
+
+    section#missionSection 
+        h2 Our Mission
+        div.card 
+            h3  Dance Perfection
+            div.card-box 
+                div.card-img
+                    img(src="/static/img/1.png", alt="")
+                div.card-content 
+                    p This is the best Dance Academy of the HELL
+        div.card 
+            h3 Dance the Way You Like
+            div.card-box 
+                div.card-img
+                    img(src="/static/img/2.png", alt="")
+                div.card-content 
+                    p This is the best Dance Academy of the HELL
+
+        div.card 
+            h3  Expert Dance
+            div.card-box 
+                div.card-img
+                    img(src="/static/img/3.png", alt="")
+                div.card-content 
+                    p This is the best Dance Academy of the HELL
+
+    section#sponsorsSection 
+        h2 Our Sponsors 
+        div#sponsors 
+            img(src="/static/img/S1.jpg", alt="Sponcers Image", class="spIMG")
+            
+            img(src="/static/img/S3.jpg", alt="Sponcers Image", class="spIMG")
+            img(src="/static/img/S4.jpg", alt="Sponcers Image", class="spIMG")
